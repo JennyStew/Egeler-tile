@@ -6,31 +6,102 @@
 	<title>Egeler Ceramic Tile Inc</title>
  	<link href="egelercss.css" type="text/css" rel="stylesheet" />
 	<style>
-		@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
-	</style>
+		@import url('https://fonts.googleapis.com/css2?family=Pavanam&display=swap');
+		/*START OF NAVBAR DESIGN*/
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  z-index: 300;
+}
 
-	
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 33.33%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+/*END OF NAVBAR DESIGN*/
+#home{
+	padding-top: 70px;
+}
+h1{
+	font-size: : 20px;
+}
+
+/*start design for image lineup upper*/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*end design for image lineup upper*/
+#footer{
+	padding-top: 150px;
+}
+	</style>
 
 	</head>
 	<body>
 
-
-		
-		<div class="counter-photo">
-		<div class="container">
-		<div id="topnav" class="topnav">
- 		 	<a class="active" href="home">Home</a>
-  			<a href="#aboutbox">About</a>
-  			<a href="#services">Services</a>
-  			<a href="#contact">Contact</a>
-		</div>
-		</div>
-	</div>
-
-<h1 id="home">Egeler Ceramic Tile Inc.</h1>
+<!-- START OF NAVBAR -->
+<div class="navbar">
+  <a href="#aboutbox">OUR STORY</a>
+  <a href="#listbox">OUR WORK</a>
+  <a href="#contact">CONTACT</a>
+</div>
+<!--END OF NAVBAR-->
+<div id="home">
+<h1>Egeler Ceramic Tile Inc.</h1>
 		<p>Professional installation experts. A third generation, family owned business serving Dexter, Ann Arbor, and surrounding areas. </p>
-	
-
+	</div>
+	<!--START OF IMAGE LINEUP-->
+	<div class="row">
+  <div class="column">
+    <img src="newimg7.jpg" alt="Shower tile" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="newimg8.jpg" alt="Bathroom floor tile" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="newimg9.jpg" alt="Bathroom tile" style="width:100%">
+  </div>
+</div>
+	<!--END OF IMAGE LINEUP-->
 		<hr>
 
 		<div id="aboutbox">
@@ -39,24 +110,21 @@
 		<p>Egeler Ceramic Tile Inc. is a contracted, family run business serving Dexter, Michigan and the surrounding area. Our father and son team have a combined 35 years of experience providing customers with quality new tile installation and renovation. We take pride in bathrooms, custom and curbless showers, in-heat floors, kitchens, foyers and fireplaces. We are committed to providing you with quality workmanship, and our customer service is a top priority. <br>
 		Tim Egeler learned the tile craft from his father Raymond Egeler, who tiled homes all across Michigan. After Raymond retired, Tim's son Jake joined the business. Egeler Ceramic Tile is more than a job to us; It's a craft we've passed down generations, and we're proud of our work.  </p>
 		</div>
-		<p><a href="#topnav">Back to top</a></p>
-
+		<!--start of second image lineup-->
+		<div class="row">
+  <div class="column">
+    <img src="newimg10.jpg" alt="Foyer tile" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="newimg11.jpg" alt="Kitchen tile" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="newimg12.jpg" alt="Living room tile" style="width:100%">
+  </div>
+</div>
+		<!--end of second image lineup-->
 		<hr>
 		<br>
-		<!-- Fran asked me to remove hours of operation
-		<div id="hours">
-		<p>Hours of operation:<br>
-			Monday: 8:00 A.M to 5:00 P.M.<br>
-			Tuesday: 8:00 A.M to 5:00 P.M.<br>
-			Wednesday: 8:00 A.M to 5:00 P.M.<br>
-			Thursday: 8:00 A.M to 5:00 P.M.<br>
-			Friday: 8:00 A.M to 5:00 P.M.<br>
-			Saturday: 8:00 A.M to 5:00 P.M.<br>
-		</p>
-		</div>
-		<br>
-		<hr> -->
-		
 	
 		<div id="listbox">
 		<h2 id="services">Services</h2>	
@@ -76,40 +144,39 @@
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-	
- <div class="mySlides fade">
+  <div class="mySlides fade">
     <div class="numbertext">1 / 6</div>
-    <img src="tileimg1.jpg" alt="a kitchen with nice tile" style="width:100%">
-    <div class="text">custom kitchens</div>
+    <img src="newimg1.jpg" style="width:100%">
+    <div class="text">Wood looking tile planks</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 6</div>
-    <img src="tileimg2.jpg" alt="shower stall with nice tile" style="width:100%">
-    <div class="text">Custom showers</div>
+    <img src="newimg2.jpg" style="width:100%">
+    <div class="text">Kitchen demolition-removing old tile</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 6</div>
-    <img src="tileimg3.jpg" alt="bathroom with nice tile" style="width:100%">
-    <div class="text">Custom bathrooms</div>
+    <img src="newimg3.jpg" style="width:100%">
+    <div class="text">Old tile removed</div>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">4 / 6</div>
-    <img src="tileimg4.jpg" alt="man kneeling placing tile floor" style="width:100%">
-    <div class="text">The boss at work</div>
+    <img src="newimg4.jpg" style="width:100%">
+    <div class="text">Placing the in-floor heating system</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">5 / 6</div>
-    <img src="tileimg5.jpg" alt="shower stall with nice tile" style="width:100%">
-    <div class="text">Custom showers</div>
+    <img src="newimg5.jpg" style="width:100%">
+    <div class="text">Laying the new tile</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">6 / 6</div>
-    <img src="tileimg6.jpg" alt="bathtub with nice tile" style="width:100%">
-    <div class="text">Custom bathrooms</div>
+    <img src="newimg6.jpg" style="width:100%">
+    <div class="text">Laying the new tile</div>
   </div>
 
 <!-- Next and previous buttons -->
@@ -127,18 +194,16 @@
   <span class="dot" onclick="currentSlide(5)"></span>
   <span class="dot" onclick="currentSlide(6)"></span>
 </div>
-	
 
+<footer id="footer">
 <hr>
 <h2 id="contact">Contact us today</h2>
-<p>Phone:(734)426-6074<br>
-Fax: (734)426-6097<br>
+<p>Phone: (734) 426-6074<br>
+Fax: (734) 426-6097<br>
 Email: www.Egelertile.com<br>
 <a href="https://www.facebook.com/egelertile/">Follow us on Facebook </a></p>
-<p><a href="#topnav">Back to top</a></p>
-		</div>
-
-
+</footer>
+</div>
 
 <script>var slideIndex = 1;
 showSlides(slideIndex);
@@ -168,6 +233,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-		</script>
+
+
+
+
+</script>
 </body>
 </html>
